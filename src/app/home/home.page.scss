@@ -1,0 +1,63 @@
+ion-toolbar{
+  --background: #333;
+  color:rgb(153, 153, 153);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-align: center;
+}
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  --background: #292929;
+}
+.conte{
+  margin-top: 30%;
+  margin-left: 40%;
+}
+.temperature {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 80px;
+  height: 500px;
+  background: #333;
+  border-radius: 50px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+  position: relative;
+  width: 40px;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.progress {
+  position: relative;
+  width: 10px;
+  background: #222;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.progress .meter {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 2.5px rgb(135, 136, 135)) drop-shadow(0 0 10px rgb(135, 136, 135));
+  transition: 0.5s;
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      sensor de luz y Noche
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conte">
+  <div class="box">
+    <div class="spinner">
+      <span id="output" class="temperature">{{temperature}}</span>
+      <div class="progress" >
+        <span id="meter" class="meter" [ngStyle]="{'background-color': getMeterColor(), 'height': getMeterHeight()}"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</ion-content>
+
